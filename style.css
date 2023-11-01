@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+
+.home-page{
+    height: 100vh;
+}
+
+.title {
+    font-family: 'griffy',monospace;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    padding-top: 20px;
+}
+
+.board-matrix {
+    height: 270px;
+    width: 270px;
+}
+
+.cell {
+    height: 90px;
+    width: 90px;
+}
+
+.one,.two,.four,.five {
+    border-right: 5px solid lightgray;
+    border-bottom: 5px solid lightgray;
+}
+
+.three,.six {
+    border-bottom: 5px solid lightgray;
+}
+
+.seven,.eight {
+    border-right: 5px solid lightgray;
+}
+
+.header {
+    height : 20vh;
+    min-height: 75px; 
+}
+
+.game-board {
+    height: 70vh;
+    width: 100%;
+    min-height: 300px;
+}
+
+.footer {
+    height: 7vh;
+    min-height: 50px;
+    width: 100%;
+    font-family: 'fira sans',monospace;
+    font-weight: 600;
+    font-size: medium;
+}
+
+.newgame,.reset{
+    min-width: 150px;
+    max-width: 250px;
+}
+
+.winner-text{
+    font-family: 'griffy',monospace;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+    background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
