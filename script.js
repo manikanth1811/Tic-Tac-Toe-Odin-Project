@@ -44,16 +44,6 @@ function gameBoard(){
     }
 
     let checkBoard = ()=> {
-        let isDraw = true;
-        for(let i = 0;i<3;i++){
-            for(let j = 0;j<3;j++){
-                if(board[i][j] === ''){
-                    isDraw = false;
-                }
-            }
-        }
-
-        if(isDraw) return 3;
 
         let winner = -1;
 
@@ -87,6 +77,17 @@ function gameBoard(){
             winner = 1000;
         }
 
+        let isDraw = true;
+        for(let i = 0;i<3;i++){
+            for(let j = 0;j<3;j++){
+                if(board[i][j] === ''){
+                    isDraw = false;
+                }
+            }
+        }
+
+        if(isDraw) return 3;
+        
         if(winner === -1){
             return 0;
         }
@@ -209,6 +210,7 @@ function gameController(){
     function winnerAnimation(winnerValue){
         if(winnerValue === 3){
             printDiv("The game is a draw");
+            return;
         }
         printDiv(`${currentPlayer.getMarker()} is the winner`);
     }
